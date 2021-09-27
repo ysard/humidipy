@@ -59,7 +59,7 @@ _HOUR_MS = const(3600000)  # 60 * 60 * 1000
 def get_humidity_percent(value):
     """Get relative humidity as percentage from raw sensor
 
-    .. note:: Calculation of oefficients
+    .. note:: Calculation of coefficients
         Solve the following system:
 
             100% = MaxRawValue * x + y
@@ -69,7 +69,7 @@ def get_humidity_percent(value):
             y = 40 - MinRawValue (60 / (MaxRawValue - MinRawValue))
             x = 60 / (MaxRawValue - MinRawValue)
 
-        ... or just copy code in https://rosettacode.org/wiki/Map_range#Python
+        ... or just copy code from https://rosettacode.org/wiki/Map_range#Python
 
     :param value: Raw value from ADC connected to capacitive sensor (voltage measure)
     :type value: <int>
@@ -117,7 +117,7 @@ def init_network():
 def send_query(data):
     """Send GET query with given parameters
 
-    .. warning:: Be careful with HTTPS protocol: axtls lib in mircopython
+    .. warning:: Be careful with HTTPS protocol: axtls lib in micropython
         doesn't support DHE or ECDHE ciphers.
     """
     request = urequests.get(
