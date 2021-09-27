@@ -46,12 +46,12 @@ REPORT_URL = "http://192.168.1.3/esp8266?"
 # Accepted humidity level; if below: pump is triggered
 _HUMIDITY_THRESHOLD = const(60)
 # Nb of wakeups (in hours) between each trigger
-_PUMP_COUNTER = const(6 * 24)  # every day
+_PUMP_COUNTER = const(6 * 24)  # every week
 _NEBULISATORS_COUNTER = const(12)  # every 12hours
 # Durations (in seconds)
 _NEBULISATORS_DURATION = const(135)  # 2min15
-_PUMP_DURATION = const(0)  # 7s Duration for each trigger
-_PUMP_INTER_SLEEP = const(0)  # 5 * 60  # Small pause between 2 triggers in a same session
+_PUMP_DURATION = const(7)  # 7s Duration for each trigger
+_PUMP_INTER_SLEEP = const(300)  # 5 * 60  # Small pause between 2 triggers in a same session
 # Misc
 _HOUR_MS = const(3600000)  # 60 * 60 * 1000
 
