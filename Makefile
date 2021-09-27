@@ -1,3 +1,6 @@
+install:
+	pip3 install -r requirements.txt
+
 upload:
 	ampy -p /dev/ttyUSB0 put src/main.py
 
