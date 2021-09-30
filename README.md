@@ -1,5 +1,10 @@
 Self-watering garden proof of concept driven by MicroPython on ESP12 / ESP8266
 
+<p align="center">
+    <img src="images/assembly.jpg" width="420">
+    <img src="images/result.jpg" width="420">
+</p>
+
 ## Overview
 
 ESP modules are very versatile and carry enough RAM / flash memory to run
