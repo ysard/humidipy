@@ -81,9 +81,9 @@ See more on [esp8266-pinout-reference-gpios](https://randomnerdtutorials.com/esp
 | :---------------- | :------------------------ | :---------------------------- |
 | IN1               | GPIO2 (OUTPUT)            | Control of the first relay    |
 | IN2               | GPIO12 (OUTPUT)           | Control of the second relay   |
-| GND de droite     | GND                       | Common ground                 |
-| VCC de droite     | 3.3V                      | Optocoupler power supply      |
-| GND de gauche     | -                         | Common ground                 |
+| right GND         | GND                       | Common ground                 |
+| right VCC         | 3.3V                      | Optocoupler power supply      |
+| left GND          | -                         | Common ground                 |
 | JD-VCC            | 5V (USB)                  | Relays power supply           |
 
 JD-VCC pin is optionally used to power the relay with a different voltage from
@@ -133,6 +133,7 @@ Example of divisor bridge 4V => 1V:
     Vout_gpio = Vin_sensor * R2 / (R1 + R2)
 
     Let's choose R2 = 5K; R1 = 10K
+    Or R2 = 2.6K; R1 = 5K
 
 100% water:
 
