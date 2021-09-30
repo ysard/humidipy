@@ -52,6 +52,9 @@ See [programmation paragraph](#programmation) to know how the workflow works.
 
 ## Assembly
 
+[schematic](images/schematic.svg)
+[power rails](images/power_rails.svg)
+
 ### ESP generic pinout
 
 - EN (CH_PD) Enable Pin has to be pulled up (R1)
@@ -142,6 +145,8 @@ Example of divisor bridge 4V => 1V:
     analogRead: 378
 
 ## Programmation
+
+[decision diagram](images/yed_decision_diagram.svg)
 
 ### Configuration
 
