@@ -52,8 +52,12 @@ See [programmation paragraph](#programmation) to know how the workflow works.
 
 ## Assembly
 
-[schematic](images/schematic.svg)
-[power rails](images/power_rails.svg)
+<p align="center">
+    <img src="images/schematic.svg" width="700" alt="schematic">
+</p>
+<p align="center">
+    <img src="images/power_rails.svg" width="400" alt="power rails">
+</p>
 
 ### ESP generic pinout
 
@@ -147,7 +151,9 @@ Example of divisor bridge 4V => 1V:
 
 ## Programmation
 
-[decision diagram](images/yed_decision_diagram.svg)
+<p align="center">
+    <img src="images/yed_decision_diagram.svg" width="650" alt="decision diagram">
+</p>
 
 ### Configuration
 
