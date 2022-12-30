@@ -66,13 +66,13 @@ See [programmation paragraph](#programmation) to know how the workflow works.
 
 ### ESP generic pinout
 
-- EN (CH_PD) Enable Pin has to be pulled up (R1)
+- EN (CH_PD) Enable Pin has to be pulled up
     => resistance not / not very useful
-- RESET Pin has to be pulled up (R3)
-- GPIO15 has to be pulled down (R2)
-    => must be LOW to boot
-- GPIO2 has to be pulled up (R4)
-    Internal pull-up is available and used
+- RESET Pin has to be pulled up (R5)
+- GPIO15 has to be pulled down
+    => must be LOW to boot, no resistor here but it's mandatory if the port is used
+- GPIO2 has to be pulled up
+    Internal pull-up is available and used (no external resistor required)
 - GPIO0: Manual LOW for flash mode
 - GPIO16: Connected to RST in order to use wakeups based on timers (deepsleep mode)
 
